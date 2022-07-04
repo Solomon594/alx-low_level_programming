@@ -1,22 +1,16 @@
-#include<stdlib.h>                                                
+#include<stdlib.h>
+#include <time.h>
+#include <stdio.h>
 
-#include<time.h>                                                  
+/**
+ *  main - entry point
+ *  Return: always return 0
+ */
 
-#include<stdio>                                                   
-
-/**                                                               
- *
- *  * main - entry point                                             
- *
- *   * Return: always return 0                                        
- *
- *    */                                                               
-
-int main(void) 
+int main(void)
 {
 char a;
-for (a ='a'; a <= 'z' ; a++)
-	putchar(a);
-	putchar("\n")
-	return (0)
+for (a == 'a'; a <= 'z'; a++)
+	putchar (a);
+	return (0);
 }
