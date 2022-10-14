@@ -3,7 +3,7 @@
  * main - Entry
  * Return: Always 0
  */
-int main(void)
+char main(void)
 {
 	char alphabet = 'a';
 
