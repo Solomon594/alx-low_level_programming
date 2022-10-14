@@ -9,10 +9,9 @@ int main(void)
 
 	while (alphabet <= 'z')
 	{
-		//print variable value
+		/*print variable value*/
 		putchar(alphabet);
-		
-		//increase the variable(a to b)
+		/*increase the variable(a to b)*/
 		alphabet++;
 	}
 	putchar("\n");
