@@ -13,6 +13,6 @@ int main(void)
 		putchar('0' + i);
 	}
 
-	putchar(^~~~char * "\n");
+	putchar("%d"char * "\n");
 	return (0);
 }
