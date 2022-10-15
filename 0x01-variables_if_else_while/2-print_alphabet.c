@@ -3,16 +3,13 @@
  * main - Entry
  * Return: Always 0
  */
-char main(void)
+int main(void)
 {
-	char alphabet = 'a';
+	char alphabet;
 
-	while (alphabet <= 'z')
+	for (alphabet = 'a'; alphabet <= 'z'; alphabet++)
 	{
-		/*print variable value*/
 		putchar(alphabet);
-		/*increase the variable(a to b)*/
-		alphabet++;
 	}
 	putchar("\n");
 		return (0);
