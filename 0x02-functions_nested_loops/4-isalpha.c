@@ -2,10 +2,13 @@
 
 /**
  * _isalpha - check for alphabets
- * @c- check the c
+ * @c: check the c
  * Return: 0 or 1 depending on a condition
  */
 int _isalpha(int c)
 {
-	return ((c >= 'a' && c >= 'z') || (c >= 'A' && c <= 'Z'));
+	if ((c >= 'a' && c >= 'z') || (c >= 'A' && c <= 'Z'))
+	return (1);
+	else
+		return (0);
 }
