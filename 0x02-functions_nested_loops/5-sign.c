@@ -1,12 +1,10 @@
 #include "main.h"
 
 /**
- * print sign - print on condition
- * @n: argument 
+ * print_sign - print on condition
+ * @n: argument
  * Return: 1, 0, or -1
  */
-
-
 int print_sign(int n)
 {
 	if (n > 0)
@@ -16,7 +14,12 @@ int print_sign(int n)
 	}
 	else if (n == 0)
 	{
-		_putchar ('0');
+		_putchar('0');
 		return (0);
+	}
+	else
+	{
+		_putchar('-');
+		return (-1);
 	}
 }
