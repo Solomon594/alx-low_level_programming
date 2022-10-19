@@ -3,18 +3,18 @@
 
 
 /**
- *  * print alphabet - print lowercase
- ** Return: none
+ *print_alphabet_x10 - print lowercase times 10
  */
 
 void print_alphabet_x10(void)
 {
 	int k;
-	int v;
+	char v;
 
-	for (k = 'a'; k <= 'z'; k++)
+	for (k = '0'; k <= '9'; k++)
 	{
-		_putchar(k);
+		for (v = 'a'; v <= 'z'; v++)
+			_putchar(k);
+		_putchar('\n');
 	}
-	_putchar('\n');
 }
