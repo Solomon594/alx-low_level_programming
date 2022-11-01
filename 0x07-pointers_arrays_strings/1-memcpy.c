@@ -9,7 +9,7 @@
  */
 char *_memcpy(char *dest, char *src, unsigned int n)
 {
-	unsigned int nd;
+	unsigned int ind;
 	unsigned char *destination =  dest;
 	const unsigned char *source = src;
 
