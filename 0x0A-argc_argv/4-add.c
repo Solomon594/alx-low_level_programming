@@ -32,7 +32,7 @@ int check_num(char *str)
  * @argv: vector
  * Return: 1 on success
  */
-int main(int argc, char argv[])
+int main(int argc, char *argv[])
 {
 	int count;
 	int str_to_int;
