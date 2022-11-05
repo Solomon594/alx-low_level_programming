@@ -7,7 +7,7 @@
  * @argv: argumets
  * Return: always 1 on success
  */
-int main(int argc, int *argv[])
+int main(int argc, char *argv[])
 {
 	int count = 0;
 
