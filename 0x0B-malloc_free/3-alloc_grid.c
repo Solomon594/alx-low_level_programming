@@ -1,4 +1,6 @@
 #include "main.h"
+#include <stdio.h>
+#include <stdlib.h>
 
 /**
  * alloc_grid - allocates grid, makes space and free
@@ -10,7 +12,8 @@ int **alloc_grid(int width, int height)
 {
 	int freenum;
 	int **grid;
-	int i, j;
+	int i;
+	int j;
 	int x;
 
 	if (width < 1 || height < 1)
@@ -40,8 +43,9 @@ int **alloc_grid(int width, int height)
 	for (x = 0; x < height; x++)
 	{
 		for (j = 0; j < width; j++)
-	{
-		grid[i][j] = 0;
-	return (grid);
+		{
+			grid[i][j] = 0;
+		}
 	}
+	return (grid);
 }
