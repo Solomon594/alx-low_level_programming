@@ -1,4 +1,4 @@
-i#include "main.h"
+#include "main.h"
 
 /**
  * alloc_grid - allocates grid, makes space and free
