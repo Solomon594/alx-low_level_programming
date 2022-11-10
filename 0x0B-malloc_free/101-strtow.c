@@ -54,10 +54,15 @@ char **strtow(char *str)
 {
 	char **string;
 	int index = 0;
-	int word, w, letter, l;
+	int word;
+	int w, letter, l;
 
 	if (str == NULL || str[0] == '\0')
 		return (NULL);
+	word = count_word(str);
+	if (word == 0)
+		return (NULL);
+
 	string = malloc(sizeof(char *) * (word + 1));
 	if (string == NULL)
 		return (NULL);
