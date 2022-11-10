@@ -13,7 +13,6 @@ char **strtow(char *str);
 int word_len(char *str)
 {
 	int index = 0;
-	int word = 0;
 	int len = 0;
 
 	while (*(str + index) && *(str + index) != ' ')
@@ -67,7 +66,7 @@ char **strtow(char *str)
 			index++;
 
 		letter = word_len(str + index);
-		string[w] = malloc(sizeof(char) * (leter + 1));
+		string[w] = malloc(sizeof(char) * (letter + 1));
 		if (string[w] == NULL)
 		{
 			for (; w >= 0; w--)
@@ -76,7 +75,7 @@ char **strtow(char *str)
 			return (NULL);
 		}
 		for (l = 0; l < letter; l++)
-			string[w][l] = str(index++)
+			string[w][l] = str[index++];
 
 				string[w][l] = '\0';
 	}
