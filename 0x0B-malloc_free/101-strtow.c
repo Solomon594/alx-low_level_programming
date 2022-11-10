@@ -59,7 +59,7 @@ char **strtow(char *str)
 
 	if (str == NULL || str[0] == '\0')
 		return (NULL);
-	word = count_word(str);
+	word = count_words(str);
 	if (word == 0)
 		return (NULL);
 
