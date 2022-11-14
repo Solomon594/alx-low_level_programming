@@ -3,7 +3,7 @@
 
 int _strlen(char *str);
 char *_strcopy(char *dest, char *src);
-dog_t *new_dog(har *name, float age, char *owner);
+dog_t *new_dog(char *name, float age, char *owner);
 
 /**
  * _strlen - find the length
@@ -44,7 +44,7 @@ char *_strcopy(char *dest, char *src)
  *
  * Return: new struct
  */
-dog_t *new_dog(har *name, float age, char *owner)
+dog_t *new_dog(char *name, float age, char *owner)
 {
 	dog_t *doggo;
 
