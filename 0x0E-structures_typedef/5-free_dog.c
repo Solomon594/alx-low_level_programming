@@ -1,7 +1,7 @@
 #include "dog.h"
 #include <stdlib.h>
 
-/***
+/**
  * free_dog - free dog
  * @d: the dog to be freed
  *
