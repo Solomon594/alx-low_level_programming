@@ -6,6 +6,8 @@
  */
 int main(void)
 {
-	printf("%s\n", __fILE__);
+	int i = 300;
+
+	printf("%s\n", i);
 	return (0);
 }
