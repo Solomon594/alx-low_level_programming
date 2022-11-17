@@ -6,7 +6,7 @@
  * @argv: array
  * Return: always 0
  */
-int main(int argc, int *argv[])
+int main(int argc, char *argv[])
 {
 	int arg1, arg2, result;
 	char o;
@@ -28,6 +28,14 @@ int main(int argc, int *argv[])
 		printf("Error\n");
 		exit(99);
 	}
+
+	o = *argv[2];
+	if ((o == '/' || o == '&') && arg2 == 0)
+	{
+		printf("Error\n");
+		exit(100);
+	}
+
 	result = func(arg1, arg2);
 
 	printf("%d\n", result);
