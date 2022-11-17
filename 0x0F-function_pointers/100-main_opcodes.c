@@ -7,10 +7,10 @@
  * @argv: array
  * Return: always 0
  */
-int main(int argc, int *argv[])
+int main(int argc, char *argv[])
 {
 	int bytes, i;
-	char arr;
+	char *arr;
 
 	if (argc != 2)
 	{
