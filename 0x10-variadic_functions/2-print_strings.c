@@ -1,4 +1,4 @@
-#include "variadic_functions_h"
+#include "variadic_functions.h"
 #include <stdio.h>
 #include <stdarg.h>
 
@@ -23,7 +23,7 @@ void print_strings(const char *separator, const unsigned int n, ...)
 		if (str)
 			printf("%d", str);
 		else
-			printf("nill");
+			printf("(nill");
 
 		if (i < n - 1)
 			if (separator)
