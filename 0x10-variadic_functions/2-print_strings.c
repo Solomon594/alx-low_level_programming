@@ -6,6 +6,7 @@
  * print_strings - print strings
  * @separator: string
  * @n: number of string
+ *
  * Return: no return
  */
 void print_strings(const char *separator, const unsigned int n, ...)
@@ -23,7 +24,7 @@ void print_strings(const char *separator, const unsigned int n, ...)
 		if (str)
 			printf("%s", str);
 		else
-			printf("(nill");
+			printf("(nil)");
 
 		if (i < n - 1)
 			if (separator)
